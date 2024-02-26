@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+
+    <style>
+        h3
+        {
+            color: peru;
+        }
+        /* mouse hober means mouse over */
+        h3:hover
+        {
+            color: black;
+            background-color: skyblue;
+        }
+        /* focus input color */
+        input:focus
+        {
+            color: tomato;
+            /* padding-left  fous ar bahire lekha;*/
+            padding-left: 20px;
+            /* outline  dkete chile padding-left re comment krte hobe ; */
+            outline: 0;
+            border: 1px solid purple;
+        }
+        /* jagula visited oiglar color change kre dibo anchor mdhe jagulo ase */
+      
+        a:visited
+        {
+           color: red;
+        }
+       
+        li:hover:last-child
+        {
+            background-color: brown;
+
+        }
+        li:hover:first-child
+        {
+            background-color: aqua;
+
+        }
+        li:hover:nth-child(2n+1)
+        {
+            color: aqua;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h3>My Heading Pseudo</h3>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <br>
+    <a href="https://www.google.com/" target="_blank">Google_Jamu</a>
+    <a href="https://www.bbc.com/news/world-africa-13861843" target="_blank">Madagasker</a>
+
+    <u>
+        <li>Alia</li>
+        <li>Dalia</li>
+        <li>kalia</li>
+        <li>balia</li>
+        <li>jaliya</li>
+        <li>kilaya</li>
+        <li>paliya</li>
+        <li>baliya</li>
+    </u>
+
+
+</body>
+</html>
