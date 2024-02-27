@@ -4,20 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Position</title>
+
+    <style>
+      .box
+        {
+            border: 2px dotted salmon;
+            width: 200px;
+        }
+        /* Ring class ta relative ar kaj krachi. */
+
+       /* .ring
+        {
+            position: relative;
+            left: 50px;
+            top: -30px; //jekno akta use kora top ar 
+            top: 30px; 
+        } */
+           
+        
+        /* now for Absolute ring */
+        /*.ring
+        {
+            position:absolute;
+            top: 40px;
+            left: 100px;
+        } */
+
+        .swim-container
+        {
+            position: relative;
+            border: 2px solid peru;
+        }
+
+        /* now for Sticky ring */
+        /* .ring
+        {
+            position: sticky;
+            top: 0px;
+        } */
+
+         /* now for Fixed ring */
+         /* .ring
+         {
+            position: fixed;
+            top: 200px;
+            left: 50px;
+         } */
+
+
+        .dummy
+        {
+           border: 1px solid rebeccapurple; 
+           width: 200px;
+           height: 200px;
+        }
+        .another_class
+        {
+            border: 2px solid blue;
+        }
+
+        
+    </style>
+
 </head>
 <body>
     <h3>CSS Position</h3>
 
+        <p>
+            Relative Postion Nijar Jiaga Chare Nah.
+            Ring class ta relative ar kaj krachi.
+        </p>
+        <p>
+            Absolute  Postion Nijar Jiaga Chare dai.
+        </p>
     <ol>
         <!-- Flow Related Position -->
-        <li>Static</li>     
+        <li>Static</li>  
+        <li>
+            <small>
+               By Default jeta thake satai Static
+            </small>
+        </li>   
         <li>Relative Position</li>  
-        <li>Absolute</li>
-
+        <li>
+            <small>Relative Position Means Current postion e relative e kto tuku change hobe.and will not leave the current spot.</small>
+        </li> 
         <br>
+        <li>Absolute</li>
+        <li>
+            <small>
+                Absolute Means will lose it's own position and will move based on the root but if any parent position is given then it will move to parent comparison but is not it will move from anywhere. <br>
+                <b>Like when we are Using .swim-container class it will move this parent position to swim container.</b><br>
+            </small>
+        </li>
+        <br>
+        <h6>Scroll Related Below.</h6>
         <!-- Scroll Related -->
         <li>Fixed</li>
         <li>Sticky</li>
+        <li>
+            <small>
+                <b>Sticky</b> Means ayta rotate korbe.not fixed.but .another_class jabar smoy ayta abr kintu jai nah so ayta nidrishto akta class mdhe kintu thakbe.
+            </small>
+        </li>
     </ol>
+
+
+    <div class="swim-container">
+        <!-- .box*3>img -->
+        <div class="box boy">
+            <img src="swim/boy.svg" alt="">
+        </div>
+        <div class="box ring">
+            <img src="swim/ring.svg" alt="">
+        </div>
+        <div class="box water">
+            <img src="swim/water.svg" alt="">
+        </div>
+
+
+        <!-- .dummy*15 -->
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+
+    <div class="another_class">
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
 </body>
 </html>
